@@ -174,11 +174,61 @@ body {
 
 /* Chat Section Start */
 .container .right-bar .chat-area {
+  background-image: url(chat-banner.png);
   height: 520px;
-  /* max-height: 500px; */
   width: 100%;
 }
+.messages {
+  height: 500px;
+  max-width: 500px;
+  width: 100%;
+  max-width: 760px;
+  position: absolute;
+  margin: 10px 40px 10px 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.message-sender {
+  margin: 10px 0 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
 
+.message-details {
+  background-color: rgba(68, 95, 95, 0.986);
+  border-radius: 10px;
+  border: 1px solid;
+  padding: 0 10px;
+  color: whitesmoke;
+}
+
+.message-sender .message-details {
+  text-align: right;
+}
+.message-sender img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 10px;
+  border: 1px solid black;
+}
+.message-reciever {
+  float: left;
+  width: 100%;
+  color: black;
+  display: flex;
+  margin: 0 0 10px 10px;
+}
+
+.message-reciever img {
+  width: 100%;
+  max-width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 1px solid black;
+}
 /* Chat Section End */
 
 /* Input Area Start */
